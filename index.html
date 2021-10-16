@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title> GitHub user search app</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="main">
+
+      <div class="header">
+        <h4>devfinder</h4>
+        <div class="darkMode" >
+          <p id="modeText">DARK</p>
+          <img src="./assets/icon-moon.svg" id = "dark_btn"alt="">
+        </div>        
+      </div>
+      
+      <div class="search" id="search_container"  >
+        <img src="./assets/icon-search.svg" alt="">
+        <input id="input" class="input" type="text"  placeholder="Search Github username...">
+        <div class="search_btn">
+          <button id="search_btn">Search</button>
+        </div>
+      </div>
+
+      <div class="content">
+        
+        <div class="profile">
+            <img id = "avatar"src="./assets/profilePlaceholder.png" alt="">
+        </div>
+
+        <div class="user">
+          
+          <div class="user_info">
+            <div class="name" >
+              <h3 id="name">Lance Toledo</h3>
+            </div>
+            <div class="date">
+                <p>Joined 25 Jan 2011</p>
+            </div>
+            
+          </div>
+          
+          <div class="username">
+            <p id="login">@lancetoledo</p>
+          </div>
+
+          <div class="bio">
+            <p id="bio">This profile has no bio</p>
+          </div>
+
+
+          <div id="statistics" class="stats_container" >
+              <div class="stats">
+                <p id="repo">Repos</p>
+                <p>8</p>
+              </div>
+              <div class="stats">
+                <p id="followers">Followers</p>
+                <p>3938</p>
+              </div>
+              <div class="stats">
+                <p id="following">Following</p>
+                <p>9</p>
+              </div>
+          </div>
+
+        <div class="links_container">
+
+            <div class="left">
+                <div class="info">
+                    <img src="./assets/icon-location.svg" alt="">
+                    <p id="location">San Francisco</p>
+                </div>
+
+                <div class="info">
+                    <img src="./assets/icon-website.svg" alt="">
+                    <a href="" id="blog">https://github.blog</a>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="info">
+                    <img src="./assets/icon-twitter.svg" alt="">
+                    <p id="twitter">Not Available</p>
+                </div>
+
+                <div class="info">
+                    <img src="./assets/icon-company.svg" alt="">
+                    <p id="company">@github</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+      </body>
+      </html>
